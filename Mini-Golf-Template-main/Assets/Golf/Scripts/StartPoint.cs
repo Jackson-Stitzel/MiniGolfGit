@@ -33,7 +33,7 @@ public class StartPoint : MonoBehaviour
     {
         for (int i = 0; i < _numberOfBalls; i++)
         {
-            Instantiate(ball, gameObject.transform.position + new Vector3(0, 0, ballSpawn), Quaternion.identity);
+            Instantiate(ball, gameObject.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
             ballSpawn += .2f;
 
         }
