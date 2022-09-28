@@ -16,10 +16,14 @@ public class Accelerator : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Ball"))
-            other.gameObject.GetComponent<Rigidbody>().AddAcceleration(10000, 0, 0);
+        {
+            other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.Project(other.gameObject.GetComponent<Rigidbody>().velocity, new Vector3(-1,0,0)).magnitude * 12,0,0 , ForceMode.Acceleration);
+            //this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+
+
         }
     }
 }

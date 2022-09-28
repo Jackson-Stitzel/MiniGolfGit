@@ -138,8 +138,8 @@ extern void Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9 (vo
 extern void Rigidbody_MoveRotation_m85825C7206E770E39DED9EE6D792702F577A891D (void);
 // 0x0000003F System.Void UnityEngine.Rigidbody::AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)
 extern void Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC (void);
-// 0x00000040 System.Void UnityEngine.Rigidbody::AddForce(System.Single,System.Single,System.Single)
-extern void Rigidbody_AddForce_mFD97FC9DA828C1952D46D28C50B1D994B19895F6 (void);
+// 0x00000040 System.Void UnityEngine.Rigidbody::AddForce(System.Single,System.Single,System.Single,UnityEngine.ForceMode)
+extern void Rigidbody_AddForce_m264F2851A456AA18D4F04B21AF23814E61A39B75 (void);
 // 0x00000041 System.Void UnityEngine.Rigidbody::.ctor()
 extern void Rigidbody__ctor_mB4E21922228AED3B52D8696D54F5B514F922CB07 (void);
 // 0x00000042 System.Void UnityEngine.Rigidbody::get_velocity_Injected(UnityEngine.Vector3&)
@@ -291,7 +291,7 @@ static Il2CppMethodPointer s_methodPointers[107] =
 	Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9,
 	Rigidbody_MoveRotation_m85825C7206E770E39DED9EE6D792702F577A891D,
 	Rigidbody_AddForce_mBDBC288D0E266BC1B62E3649B4FCE46E7EA9CCBC,
-	Rigidbody_AddForce_mFD97FC9DA828C1952D46D28C50B1D994B19895F6,
+	Rigidbody_AddForce_m264F2851A456AA18D4F04B21AF23814E61A39B75,
 	Rigidbody__ctor_mB4E21922228AED3B52D8696D54F5B514F922CB07,
 	Rigidbody_get_velocity_Injected_mFD6FCA2857D9953AA953DB9AAF26A88CA881171C,
 	Rigidbody_set_velocity_Injected_m41B399E90D6AA49BABD3C178B3183AD3BBB4EAC4,
@@ -432,7 +432,7 @@ static const int32_t s_InvokerIndices[107] =
 	4375,
 	4314,
 	2395,
-	1197,
+	834,
 	5436,
 	4174,
 	4174,
